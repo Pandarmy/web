@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Register</title>
+	<style type="text/css">
+	    *{
+	    	margin: 0 ;
+	    	padding: 0;
+	    }
+	  
+	    .login{
+	    
+	    	text-decoration: none;
+	    	color: white;
+	    	font-size: 10px;
+	    
+	    	flex: 2;
+	    }
+	    .login a{
+	    	height: 10px;
+	    }
+		.bgi{
+            background-image: url(https://upload-images.jianshu.io/upload_images/16977490-26929326d6310067.jpg?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240);
+           
+            background-size: cover;
+           background-repeat: no-repeat;
+           height: 675px;
+           width: 1263px;
+
+		}
+		.character_1{
+			padding-top: 20px;
+			flex-direction: row;
+			width:232px; 
+			flex-grow: 1;
+			height: 240px;
+
+		}
+		.character_2{
+			flex-direction: row;
+			padding-right: 30px;
+			padding-top: 50px;
+			flex-grow: 1;
+			height:456px;
+			 }
+		.form1{
+			flex-grow: 1;
+			padding-top: 10px;
+			font-size: 15px;
+			font-family: simsun;
+			height: 200px;
+			flex:1;
+
+		}
+		.first{
+			height: 10px;
+		}
+		.second{
+			height: 635px;
+			display: flex;
+			flex-direction: row;
+		}
+		.third{
+			height: 10px;
+			display: flex;
+		    flex-direction: row;
+		}
+		.contact,.lows{
+			padding-left: 240px;
+			text-decoration: none;
+			color: grey;
+			font-size: 10px;
+			
+		}
+		.cooperatived{
+			padding-left: 240px;
+			text-decoration: none;
+			color: grey;
+			font-size: 10px;
+
+		}
+	</style>
+	<script type="text/javascript">
+     function xx(){
+     	var xingming =document.getElementById('Xm').value;
+     	if(xingming.length<2||xingming.length>4){
+     		alert("请输入2~4位姓名");
+     	}
+     
+     }//检查姓名长度
+
+	function pn()
+	{	var phone = document.getElementById('Phonenumber');
+		if(phone.length!==11){
+			alert("请输入11位有效手机号码！");
+		}
+	}//检查手机号长度
+	function pwd(){
+		var pwd1 = document.getElementById('password1').value;
+		if(pwd1.length<6||pwd1.length>11)
+		{
+			alert("请输入有效密码！");
+		}
+		}//检查密码长度
+	function cpwd(){
+		var cpwd1 = document.getElementById('password1');
+		var cpwd2 = document.getElementById('password2');
+		if(cpwd1!==cpwd2){
+       alert("两次输入密码不一致！");
+		}
+	}//检查密码一致性
+   
+	</script>
+</head>
+<body>
+	
+
+		<div class="bgi">
+			<div class="first">
+				<div ><a href="#" class="login"><p>已有账号？点击登陆</p></a></div>
+			</div>
+			<div class="second">
+			<div class="character_1"><img src="https://upload-images.jianshu.io/upload_images/16977490-320768d50526277a.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="游戏角色1"></div> <!--游戏角色1-->
+
+			<form action="Information.html" class="form1">
+				<table>
+				<tr>
+				<td>姓名<input type="text" id="Xm" placeholder="请输入2~4位姓名"></td>
+				<td><input type="button" value="查询" onclick="xx()"></td>
+				
+			    </tr>
+				
+				<tr>	
+			   	<td>性别<input type="radio" name="gender">女
+			            <input type="radio" name="gender">男</td>
+                </tr>
+                <br/>
+				<tr>
+					<td>手机号<input type="text" id="Phonenumber" name="phone_number" ></td>
+                    <td><input type="button" value="查询" onclick="pn()"></td>
+				</tr>
+				<br/>
+				<tr >
+					<td>密码<input type="password" id="password1" name="password"  >
+					<input type="submit" value="验证" onclick ="pwd()"></td>
+				</tr>
+				<br/>
+				<tr>
+					<td>确定密码<input type="password" id="password2" name="confirmPassword" ></td>
+				    <td><input type="submit" value="确定密码" onclick="cpwd()"></td>
+				</tr>
+				</table> 
+				<table>
+					<tr>
+						<td><input type="text" placeholder="请输入年份"></td>
+						<td>
+						<select>
+						<option value="月">月</option>	
+						<option value="1">1</option>
+						<option value="2">2</option>
+						<option value="3">3</option>
+						<option value="4">4</option>
+						<option value="5">5</option>
+						<option value="6">6</option>
+						<option value="7">7</option>
+						<option value="8">8</option>
+						<option value="9">9</option>
+						<option value="10">10</option>
+						<option value="11">11</option>
+						<option value="12">12</option>
+                         </td>
+                         <td>
+                         	<select>
+                         	<option value="日">日</option>
+                         	<option value="1">1</option>
+                         	<option value="2">2</option>
+                         	<option value="3">3</option>
+                         	<option value="4">4</option>
+                         	<option value="5">5</option>
+                         	<option value="6">6</option>
+                         	<option value="7">7</option>
+                         	<option value="8">8</option>
+                         	<option value="9">9</option>
+                         	<option value="10">10</option>
+                         	<option value="11">11</option>
+                         	<option value="12">12</option>
+                         	<option value="13">13</option>
+                         	<option value="14">14</option>
+                         	<option value="15">15</option>
+                         	<option value="16">16</option>
+                         	<option value="17">17</option>
+                         	<option value="18">18</option>
+                         	<option value="19">19</option>
+                         	<option value="20">20</option>
+                         	<option value="21">21</option>
+                         	<option value="22">22</option>
+                         	<option value="23">23</option>
+                         	<option value="24">24</option>
+                         	<option value="25">25</option>
+                         	<option value="26">26</option>
+                         	<option value="27">27</option>
+                         	<option value="28">28</option>
+                         	<option value="29">29</option>
+                         	<option value="30">30</option>
+                         	<option value="31">31</option>
+                         	<!--我相信有改进的那一天555-->
+                         	</select>
+                         </td>
+					</tr>						
+					
+				</table>
+				
+				<table>
+					<tr>
+						爱好：<br/>
+						<input type="checkbox" name="aihao" >吃饭
+						<input type="checkbox" name="aihao" >睡觉
+						<input type="checkbox" name="aihao">打豆豆
+						<br/>
+						<input type="checkbox" name="aihao">学习
+						<input type="checkbox" name="aihao">听歌
+						<input type="checkbox" name="aihao">摄影
+						<input type="checkbox" name="aihao">其他
+					</tr>
+					<br/>
+					<tr>
+						个人介绍：<br/>
+						<textarea  cols="30" rows="4"></textarea>
+					</tr>
+				</table>
+				    <table>
+				    	<input type="submit" value="注册">
+				      </table>
+			</form>
+			  
+			<div class="character_2"><img src="https://upload-images.jianshu.io/upload_images/16977490-cba54ec7e1a636a7.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="游戏角色2"></div><!--游戏角色2-->    
+			</div>   
+		      <div class="third">
+		      	<div > <a href="#" class="contact">|联系我们|</a></div>
+             	<div ><a href="#" class="cooperatived">|合作伙伴|</a></div>
+            	<div><a href="#" class="lows">|法律声明|</a></div>
+           </div>
+           </div>   
+           
+	
+</body>
+</html>
